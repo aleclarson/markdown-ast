@@ -1,0 +1,2438 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Bold star syntax 1`] = `
+Array [
+  Object {
+    "text": "I ",
+    "type": "text",
+  },
+  Object {
+    "block": Array [
+      Object {
+        "text": "like",
+        "type": "text",
+      },
+    ],
+    "type": "bold",
+  },
+  Object {
+    "text": " tiny libraries",
+    "type": "text",
+  },
+]
+`;
+
+exports[`Bold underline syntax 1`] = `
+Array [
+  Object {
+    "text": "I ",
+    "type": "text",
+  },
+  Object {
+    "block": Array [
+      Object {
+        "text": "like",
+        "type": "text",
+      },
+    ],
+    "type": "bold",
+  },
+  Object {
+    "text": " tiny libraries",
+    "type": "text",
+  },
+]
+`;
+
+exports[`Bold wrapped in italic 1`] = `
+Array [
+  Object {
+    "block": Array [
+      Object {
+        "text": "I like ",
+        "type": "text",
+      },
+      Object {
+        "block": Array [
+          Object {
+            "text": "tiny",
+            "type": "text",
+          },
+        ],
+        "type": "bold",
+      },
+      Object {
+        "text": " libraries",
+        "type": "text",
+      },
+    ],
+    "type": "italic",
+  },
+]
+`;
+
+exports[`Bold wrapped in italic 2`] = `
+Array [
+  Object {
+    "block": Array [
+      Object {
+        "text": "I like ",
+        "type": "text",
+      },
+      Object {
+        "block": Array [
+          Object {
+            "text": "tiny",
+            "type": "text",
+          },
+        ],
+        "type": "bold",
+      },
+      Object {
+        "text": " libraries",
+        "type": "text",
+      },
+    ],
+    "type": "italic",
+  },
+]
+`;
+
+exports[`Bold wrapped in italic 3`] = `
+Array [
+  Object {
+    "block": Array [
+      Object {
+        "text": "I like ",
+        "type": "text",
+      },
+      Object {
+        "block": Array [
+          Object {
+            "text": "tiny",
+            "type": "text",
+          },
+        ],
+        "type": "bold",
+      },
+      Object {
+        "text": " libraries",
+        "type": "text",
+      },
+    ],
+    "type": "italic",
+  },
+]
+`;
+
+exports[`Borders alternate symbols 1`] = `
+Array [
+  Object {
+    "text": "foo",
+    "type": "text",
+  },
+  Object {
+    "text": "***",
+    "type": "border",
+  },
+  Object {
+    "text": "
+
+",
+    "type": "break",
+  },
+  Object {
+    "text": "bar",
+    "type": "text",
+  },
+]
+`;
+
+exports[`Borders alternate symbols 2`] = `
+Array [
+  Object {
+    "text": "foo",
+    "type": "text",
+  },
+  Object {
+    "text": "* * *",
+    "type": "border",
+  },
+  Object {
+    "text": "
+
+",
+    "type": "break",
+  },
+  Object {
+    "text": "bar",
+    "type": "text",
+  },
+]
+`;
+
+exports[`Borders alternate symbols 3`] = `
+Array [
+  Object {
+    "text": "foo",
+    "type": "text",
+  },
+  Object {
+    "text": "___",
+    "type": "border",
+  },
+  Object {
+    "text": "bar",
+    "type": "text",
+  },
+]
+`;
+
+exports[`Borders alternate symbols 4`] = `
+Array [
+  Object {
+    "text": "foo",
+    "type": "text",
+  },
+  Object {
+    "text": "_ _ _",
+    "type": "border",
+  },
+  Object {
+    "text": "bar",
+    "type": "text",
+  },
+]
+`;
+
+exports[`Borders inside a quote 1`] = `
+Array [
+  Object {
+    "block": Array [
+      Object {
+        "text": "---",
+        "type": "border",
+      },
+      Object {
+        "text": "bar",
+        "type": "text",
+      },
+    ],
+    "type": "quote",
+  },
+]
+`;
+
+exports[`Borders inside a quote 2`] = `
+Array [
+  Object {
+    "block": Array [
+      Object {
+        "text": "* * *",
+        "type": "border",
+      },
+      Object {
+        "text": "bar",
+        "type": "text",
+      },
+    ],
+    "type": "quote",
+  },
+]
+`;
+
+exports[`Borders using spaced-out dashes 1`] = `
+Array [
+  Object {
+    "text": "foo",
+    "type": "text",
+  },
+  Object {
+    "text": "- - -",
+    "type": "border",
+  },
+  Object {
+    "text": "bar",
+    "type": "text",
+  },
+]
+`;
+
+exports[`Borders using spaced-out dashes 2`] = `
+Array [
+  Object {
+    "text": "foo",
+    "type": "text",
+  },
+  Object {
+    "text": "-	-	-",
+    "type": "border",
+  },
+  Object {
+    "text": "bar",
+    "type": "text",
+  },
+]
+`;
+
+exports[`Borders using spaced-out dashes 3`] = `
+Array [
+  Object {
+    "text": "foo",
+    "type": "text",
+  },
+  Object {
+    "text": "- 	 - 	 -",
+    "type": "border",
+  },
+  Object {
+    "text": "bar",
+    "type": "text",
+  },
+]
+`;
+
+exports[`Borders using tight-packed dashes 1`] = `
+Array [
+  Object {
+    "text": "foo",
+    "type": "text",
+  },
+  Object {
+    "text": "
+
+",
+    "type": "break",
+  },
+  Object {
+    "text": "---",
+    "type": "border",
+  },
+  Object {
+    "text": "bar",
+    "type": "text",
+  },
+]
+`;
+
+exports[`Borders using tight-packed dashes 2`] = `
+Array [
+  Object {
+    "text": "foo",
+    "type": "text",
+  },
+  Object {
+    "text": "
+
+",
+    "type": "break",
+  },
+  Object {
+    "text": "----",
+    "type": "border",
+  },
+  Object {
+    "text": "bar",
+    "type": "text",
+  },
+]
+`;
+
+exports[`Breaks using double \\n 1`] = `
+Array [
+  Object {
+    "text": "Something with",
+    "type": "text",
+  },
+  Object {
+    "text": "
+
+",
+    "type": "break",
+  },
+  Object {
+    "text": "a line break",
+    "type": "text",
+  },
+]
+`;
+
+exports[`Breaks using double \\r\\n 1`] = `
+Array [
+  Object {
+    "text": "Something with
+
+a line break",
+    "type": "text",
+  },
+]
+`;
+
+exports[`Breaks using double space + \\n 1`] = `
+Array [
+  Object {
+    "text": "Something with",
+    "type": "text",
+  },
+  Object {
+    "text": "  
+",
+    "type": "break",
+  },
+  Object {
+    "text": "a line break",
+    "type": "text",
+  },
+]
+`;
+
+exports[`Code blocks using indentation 1`] = `
+Array [
+  Object {
+    "code": "var a = 1
+var b = 2",
+    "indent": "	",
+    "syntax": "",
+    "type": "codeBlock",
+  },
+]
+`;
+
+exports[`Code blocks using indentation 2`] = `
+Array [
+  Object {
+    "code": "var a = 1
+var b = 2",
+    "indent": "    ",
+    "syntax": "",
+    "type": "codeBlock",
+  },
+]
+`;
+
+exports[`Code blocks using triple backticks 1`] = `
+Array [
+  Object {
+    "code": "function approx(n) {}",
+    "indent": "",
+    "syntax": "",
+    "type": "codeBlock",
+  },
+]
+`;
+
+exports[`Code blocks with syntax highlighting 1`] = `
+Array [
+  Object {
+    "code": "function approx(n) {}",
+    "indent": "",
+    "syntax": "js",
+    "type": "codeBlock",
+  },
+]
+`;
+
+exports[`Code spans in between text nodes 1`] = `
+Array [
+  Object {
+    "text": "Use ",
+    "type": "text",
+  },
+  Object {
+    "code": "foo(bar, true)",
+    "type": "codeSpan",
+  },
+  Object {
+    "text": " to win bigly.",
+    "type": "text",
+  },
+]
+`;
+
+exports[`Edge cases unclosed bold 1`] = `
+Array [
+  Object {
+    "block": Array [],
+    "type": "bold",
+  },
+]
+`;
+
+exports[`Edge cases unclosed bold 2`] = `
+Array [
+  Object {
+    "block": Array [],
+    "type": "bold",
+  },
+]
+`;
+
+exports[`Edge cases unclosed bold 3`] = `
+Array [
+  Object {
+    "block": Array [
+      Object {
+        "text": "foo",
+        "type": "text",
+      },
+    ],
+    "type": "bold",
+  },
+]
+`;
+
+exports[`Edge cases unclosed bold 4`] = `
+Array [
+  Object {
+    "block": Array [
+      Object {
+        "text": "foo",
+        "type": "text",
+      },
+    ],
+    "type": "bold",
+  },
+]
+`;
+
+exports[`Edge cases unclosed code block 1`] = `
+Array [
+  Object {
+    "text": "\`\`\`",
+    "type": "text",
+  },
+]
+`;
+
+exports[`Edge cases unclosed code block 2`] = `
+Array [
+  Object {
+    "text": "\`\`\`
+foo",
+    "type": "text",
+  },
+]
+`;
+
+exports[`Edge cases unclosed code span 1`] = `
+Array [
+  Object {
+    "text": "\`",
+    "type": "text",
+  },
+]
+`;
+
+exports[`Edge cases unclosed code span 2`] = `
+Array [
+  Object {
+    "text": "\`foo",
+    "type": "text",
+  },
+]
+`;
+
+exports[`Edge cases unclosed image 1`] = `
+Array [
+  Object {
+    "text": "![",
+    "type": "text",
+  },
+]
+`;
+
+exports[`Edge cases unclosed image 2`] = `
+Array [
+  Object {
+    "alt": "",
+    "ref": "",
+    "type": "image",
+    "url": "",
+  },
+  Object {
+    "text": "(",
+    "type": "text",
+  },
+]
+`;
+
+exports[`Edge cases unclosed image 3`] = `
+Array [
+  Object {
+    "text": "![foo",
+    "type": "text",
+  },
+]
+`;
+
+exports[`Edge cases unclosed image 4`] = `
+Array [
+  Object {
+    "alt": "",
+    "ref": "",
+    "type": "image",
+    "url": "",
+  },
+  Object {
+    "text": "(foo",
+    "type": "text",
+  },
+]
+`;
+
+exports[`Edge cases unclosed italic 1`] = `
+Array [
+  Object {
+    "block": Array [],
+    "type": "italic",
+  },
+]
+`;
+
+exports[`Edge cases unclosed italic 2`] = `
+Array [
+  Object {
+    "block": Array [],
+    "type": "italic",
+  },
+]
+`;
+
+exports[`Edge cases unclosed italic 3`] = `
+Array [
+  Object {
+    "block": Array [
+      Object {
+        "text": "foo",
+        "type": "text",
+      },
+    ],
+    "type": "italic",
+  },
+]
+`;
+
+exports[`Edge cases unclosed italic 4`] = `
+Array [
+  Object {
+    "block": Array [
+      Object {
+        "text": "foo",
+        "type": "text",
+      },
+    ],
+    "type": "italic",
+  },
+]
+`;
+
+exports[`Edge cases unclosed link 1`] = `
+Array [
+  Object {
+    "block": Array [],
+    "ref": "",
+    "type": "link",
+    "url": "",
+  },
+]
+`;
+
+exports[`Edge cases unclosed link 2`] = `
+Array [
+  Object {
+    "block": Array [
+      Object {
+        "text": "foo",
+        "type": "text",
+      },
+    ],
+    "ref": "",
+    "type": "link",
+    "url": "",
+  },
+]
+`;
+
+exports[`Edge cases unclosed link 3`] = `
+Array [
+  Object {
+    "block": Array [
+      Object {
+        "text": "foo",
+        "type": "text",
+      },
+    ],
+    "ref": "",
+    "type": "link",
+    "url": "",
+  },
+  Object {
+    "text": "(",
+    "type": "text",
+  },
+]
+`;
+
+exports[`Edge cases unclosed link 4`] = `
+Array [
+  Object {
+    "block": Array [
+      Object {
+        "text": "foo",
+        "type": "text",
+      },
+    ],
+    "ref": "",
+    "type": "link",
+    "url": "",
+  },
+  Object {
+    "text": "(#bar",
+    "type": "text",
+  },
+]
+`;
+
+exports[`Edge cases unclosed strike-through 1`] = `
+Array [
+  Object {
+    "block": Array [],
+    "type": "strike",
+  },
+]
+`;
+
+exports[`Edge cases unclosed strike-through 2`] = `
+Array [
+  Object {
+    "block": Array [
+      Object {
+        "text": "foo",
+        "type": "text",
+      },
+    ],
+    "type": "strike",
+  },
+]
+`;
+
+exports[`Escaped characters escaped bold 1`] = `
+Array [
+  Object {
+    "text": "\\\\_",
+    "type": "text",
+  },
+  Object {
+    "block": Array [
+      Object {
+        "text": "foo",
+        "type": "text",
+      },
+    ],
+    "type": "italic",
+  },
+]
+`;
+
+exports[`Escaped characters escaped escape 1`] = `
+Array [
+  Object {
+    "text": "\\\\\\\\",
+    "type": "text",
+  },
+  Object {
+    "block": Array [
+      Object {
+        "text": "foo",
+        "type": "text",
+      },
+      Object {
+        "block": Array [],
+        "type": "italic",
+      },
+    ],
+    "type": "bold",
+  },
+]
+`;
+
+exports[`Escaped characters escaped title 1`] = `
+Array [
+  Object {
+    "text": "\\\\# foo bar",
+    "type": "text",
+  },
+]
+`;
+
+exports[`Images cannot be confused for a link definition 1`] = `
+Array [
+  Object {
+    "alt": "foo",
+    "ref": "",
+    "type": "image",
+    "url": "",
+  },
+  Object {
+    "text": ": bar",
+    "type": "text",
+  },
+]
+`;
+
+exports[`Images escaped square brackets in the alt text 1`] = `
+Array [
+  Object {
+    "alt": "hello \\\\[world\\\\]",
+    "ref": "",
+    "type": "image",
+    "url": "foo.png",
+  },
+]
+`;
+
+exports[`Images inline url 1`] = `
+Array [
+  Object {
+    "alt": "",
+    "ref": "",
+    "type": "image",
+    "url": "foo.png",
+  },
+]
+`;
+
+exports[`Images inline url 2`] = `
+Array [
+  Object {
+    "alt": "title",
+    "ref": "",
+    "type": "image",
+    "url": "foo.png",
+  },
+]
+`;
+
+exports[`Images inside a link block 1`] = `
+Array [
+  Object {
+    "block": Array [
+      Object {
+        "alt": "",
+        "ref": "",
+        "type": "image",
+        "url": "toc.png",
+      },
+    ],
+    "ref": "",
+    "type": "link",
+    "url": "#toc",
+  },
+]
+`;
+
+exports[`Images inside a link block 2`] = `
+Array [
+  Object {
+    "block": Array [
+      Object {
+        "alt": "Foo Bar",
+        "ref": "",
+        "type": "image",
+        "url": "foo.png",
+      },
+    ],
+    "ref": "",
+    "type": "link",
+    "url": "#foo",
+  },
+]
+`;
+
+exports[`Images inside a link block 3`] = `
+Array [
+  Object {
+    "block": Array [
+      Object {
+        "alt": "Example",
+        "ref": "",
+        "type": "image",
+        "url": "",
+      },
+    ],
+    "ref": "",
+    "type": "link",
+    "url": "#example",
+  },
+]
+`;
+
+exports[`Images link reference 1`] = `
+Array [
+  Object {
+    "alt": "",
+    "ref": "foo",
+    "type": "image",
+    "url": "",
+  },
+]
+`;
+
+exports[`Images link reference 2`] = `
+Array [
+  Object {
+    "alt": "Foo Bar",
+    "ref": "",
+    "type": "image",
+    "url": "",
+  },
+]
+`;
+
+exports[`Images markdown in the alt text 1`] = `
+Array [
+  Object {
+    "alt": "# foo _bar_ ![baz",
+    "ref": "",
+    "type": "image",
+    "url": "",
+  },
+  Object {
+    "text": "]",
+    "type": "text",
+  },
+]
+`;
+
+exports[`Italic star syntax 1`] = `
+Array [
+  Object {
+    "text": "I ",
+    "type": "text",
+  },
+  Object {
+    "block": Array [
+      Object {
+        "text": "like",
+        "type": "text",
+      },
+    ],
+    "type": "italic",
+  },
+  Object {
+    "text": " tiny libraries",
+    "type": "text",
+  },
+]
+`;
+
+exports[`Italic underline syntax 1`] = `
+Array [
+  Object {
+    "text": "I ",
+    "type": "text",
+  },
+  Object {
+    "block": Array [
+      Object {
+        "text": "like",
+        "type": "text",
+      },
+    ],
+    "type": "italic",
+  },
+  Object {
+    "text": " tiny libraries",
+    "type": "text",
+  },
+]
+`;
+
+exports[`Italic wrapped in bold 1`] = `
+Array [
+  Object {
+    "block": Array [
+      Object {
+        "text": "I like ",
+        "type": "text",
+      },
+      Object {
+        "block": Array [
+          Object {
+            "text": "tiny",
+            "type": "text",
+          },
+        ],
+        "type": "italic",
+      },
+      Object {
+        "text": " libraries",
+        "type": "text",
+      },
+    ],
+    "type": "bold",
+  },
+]
+`;
+
+exports[`Italic wrapped in bold 2`] = `
+Array [
+  Object {
+    "block": Array [
+      Object {
+        "text": "I like ",
+        "type": "text",
+      },
+      Object {
+        "block": Array [
+          Object {
+            "text": "tiny",
+            "type": "text",
+          },
+        ],
+        "type": "italic",
+      },
+      Object {
+        "text": " libraries",
+        "type": "text",
+      },
+    ],
+    "type": "bold",
+  },
+]
+`;
+
+exports[`Italic wrapped in bold 3`] = `
+Array [
+  Object {
+    "block": Array [
+      Object {
+        "text": "I like ",
+        "type": "text",
+      },
+      Object {
+        "block": Array [
+          Object {
+            "text": "tiny",
+            "type": "text",
+          },
+        ],
+        "type": "italic",
+      },
+      Object {
+        "text": " libraries",
+        "type": "text",
+      },
+    ],
+    "type": "bold",
+  },
+]
+`;
+
+exports[`Link definitions must come first on their line 1`] = `
+Array [
+  Object {
+    "key": "foo",
+    "type": "linkDef",
+    "url": "https://github.com/aleclarson/markdown-ast",
+  },
+]
+`;
+
+exports[`Links auto-close any nested blocks 1`] = `
+Array [
+  Object {
+    "block": Array [
+      Object {
+        "text": "unclosed ",
+        "type": "text",
+      },
+      Object {
+        "block": Array [
+          Object {
+            "text": "bold text",
+            "type": "text",
+          },
+        ],
+        "type": "bold",
+      },
+    ],
+    "ref": "",
+    "type": "link",
+    "url": "#foo",
+  },
+]
+`;
+
+exports[`Links auto-close any nested blocks 2`] = `
+Array [
+  Object {
+    "block": Array [
+      Object {
+        "text": "unclosed ",
+        "type": "text",
+      },
+      Object {
+        "block": Array [
+          Object {
+            "text": "italic text",
+            "type": "text",
+          },
+        ],
+        "type": "italic",
+      },
+    ],
+    "ref": "",
+    "type": "link",
+    "url": "#foo",
+  },
+]
+`;
+
+exports[`Links auto-close any nested blocks 3`] = `
+Array [
+  Object {
+    "block": Array [
+      Object {
+        "text": "unclosed ",
+        "type": "text",
+      },
+      Object {
+        "block": Array [
+          Object {
+            "text": "link",
+            "type": "text",
+          },
+        ],
+        "ref": "",
+        "type": "link",
+        "url": " text](#foo",
+      },
+    ],
+    "ref": "",
+    "type": "link",
+    "url": "",
+  },
+]
+`;
+
+exports[`Links auto-close any nested blocks 4`] = `
+Array [
+  Object {
+    "block": Array [
+      Object {
+        "text": "unclosed ",
+        "type": "text",
+      },
+      Object {
+        "alt": "link text",
+        "ref": "",
+        "type": "image",
+        "url": "#foo",
+      },
+    ],
+    "ref": "",
+    "type": "link",
+    "url": "",
+  },
+]
+`;
+
+exports[`Links hash url 1`] = `
+Array [
+  Object {
+    "block": Array [
+      Object {
+        "text": "Example",
+        "type": "text",
+      },
+    ],
+    "ref": "",
+    "type": "link",
+    "url": "#example",
+  },
+]
+`;
+
+exports[`Links inline url 1`] = `
+Array [
+  Object {
+    "block": Array [
+      Object {
+        "text": "Hello world",
+        "type": "text",
+      },
+    ],
+    "ref": "",
+    "type": "link",
+    "url": "https://github.com/aleclarson/markdown-ast",
+  },
+]
+`;
+
+exports[`Links inside an <h1> 1`] = `
+Array [
+  Object {
+    "block": Array [
+      Object {
+        "text": "I like ",
+        "type": "text",
+      },
+      Object {
+        "block": Array [
+          Object {
+            "text": "this",
+            "type": "text",
+          },
+        ],
+        "ref": "",
+        "type": "link",
+        "url": "",
+      },
+    ],
+    "rank": 1,
+    "type": "title",
+  },
+]
+`;
+
+exports[`Links inside an <h1> 2`] = `
+Array [
+  Object {
+    "block": Array [
+      Object {
+        "text": "I like ",
+        "type": "text",
+      },
+      Object {
+        "block": Array [
+          Object {
+            "text": "this",
+            "type": "text",
+          },
+        ],
+        "ref": "",
+        "type": "link",
+        "url": "#foo",
+      },
+    ],
+    "rank": 1,
+    "type": "title",
+  },
+]
+`;
+
+exports[`Links inside an <h1> 3`] = `
+Array [
+  Object {
+    "block": Array [
+      Object {
+        "text": "I like ",
+        "type": "text",
+      },
+      Object {
+        "block": Array [
+          Object {
+            "text": "this",
+            "type": "text",
+          },
+        ],
+        "ref": "",
+        "type": "link",
+        "url": "https://github.com/aleclarson/markdown-ast",
+      },
+    ],
+    "rank": 1,
+    "type": "title",
+  },
+]
+`;
+
+exports[`Links link reference 1`] = `
+Array [
+  Object {
+    "text": "Hello ",
+    "type": "text",
+  },
+  Object {
+    "block": Array [
+      Object {
+        "text": "GitHub",
+        "type": "text",
+      },
+    ],
+    "ref": "",
+    "type": "link",
+    "url": "",
+  },
+  Object {
+    "text": "!",
+    "type": "text",
+  },
+]
+`;
+
+exports[`Links link reference 2`] = `
+Array [
+  Object {
+    "text": "Hello ",
+    "type": "text",
+  },
+  Object {
+    "block": Array [
+      Object {
+        "text": "GitHub",
+        "type": "text",
+      },
+    ],
+    "ref": "gh",
+    "type": "link",
+    "url": "",
+  },
+  Object {
+    "text": "!",
+    "type": "text",
+  },
+]
+`;
+
+exports[`Lists <ol> 1`] = `
+Array [
+  Object {
+    "block": Array [
+      Object {
+        "text": "Ordered",
+        "type": "text",
+      },
+    ],
+    "bullet": "1.",
+    "indent": "",
+    "type": "list",
+  },
+  Object {
+    "block": Array [
+      Object {
+        "text": "Lists",
+        "type": "text",
+      },
+    ],
+    "bullet": "2.",
+    "indent": "",
+    "type": "list",
+  },
+  Object {
+    "block": Array [
+      Object {
+        "text": "Numbers are ignored",
+        "type": "text",
+      },
+    ],
+    "bullet": "4.",
+    "indent": "",
+    "type": "list",
+  },
+]
+`;
+
+exports[`Lists <ol> 2`] = `
+Array [
+  Object {
+    "block": Array [
+      Object {
+        "text": "Ordered",
+        "type": "text",
+      },
+    ],
+    "bullet": "1)",
+    "indent": "",
+    "type": "list",
+  },
+  Object {
+    "block": Array [
+      Object {
+        "text": "Lists",
+        "type": "text",
+      },
+    ],
+    "bullet": "2)",
+    "indent": "",
+    "type": "list",
+  },
+  Object {
+    "block": Array [
+      Object {
+        "text": "Numbers are ignored",
+        "type": "text",
+      },
+    ],
+    "bullet": "4)",
+    "indent": "",
+    "type": "list",
+  },
+]
+`;
+
+exports[`Lists <ul> 1`] = `
+Array [
+  Object {
+    "block": Array [
+      Object {
+        "text": "One",
+        "type": "text",
+      },
+    ],
+    "bullet": "-",
+    "indent": "",
+    "type": "list",
+  },
+  Object {
+    "block": Array [
+      Object {
+        "text": "Two",
+        "type": "text",
+      },
+    ],
+    "bullet": "-",
+    "indent": "",
+    "type": "list",
+  },
+]
+`;
+
+exports[`Lists <ul> 2`] = `
+Array [
+  Object {
+    "block": Array [
+      Object {
+        "text": "One",
+        "type": "text",
+      },
+    ],
+    "bullet": "+",
+    "indent": "",
+    "type": "list",
+  },
+  Object {
+    "block": Array [
+      Object {
+        "text": "Two",
+        "type": "text",
+      },
+    ],
+    "bullet": "+",
+    "indent": "",
+    "type": "list",
+  },
+]
+`;
+
+exports[`Lists <ul> 3`] = `
+Array [
+  Object {
+    "block": Array [
+      Object {
+        "text": "One",
+        "type": "text",
+      },
+    ],
+    "bullet": "*",
+    "indent": "",
+    "type": "list",
+  },
+  Object {
+    "block": Array [
+      Object {
+        "text": "Two",
+        "type": "text",
+      },
+    ],
+    "bullet": "*",
+    "indent": "",
+    "type": "list",
+  },
+]
+`;
+
+exports[`Lists <ul> with mixed bullet styles 1`] = `
+Array [
+  Object {
+    "block": Array [
+      Object {
+        "text": "One",
+        "type": "text",
+      },
+    ],
+    "bullet": "+",
+    "indent": "",
+    "type": "list",
+  },
+  Object {
+    "block": Array [
+      Object {
+        "text": "Two",
+        "type": "text",
+      },
+    ],
+    "bullet": "*",
+    "indent": "",
+    "type": "list",
+  },
+  Object {
+    "block": Array [
+      Object {
+        "text": "Three",
+        "type": "text",
+      },
+    ],
+    "bullet": "-",
+    "indent": "",
+    "type": "list",
+  },
+]
+`;
+
+exports[`Lists indented <ol> 1`] = `
+Array [
+  Object {
+    "block": Array [
+      Object {
+        "text": "One",
+        "type": "text",
+      },
+    ],
+    "bullet": "1.",
+    "indent": "",
+    "type": "list",
+  },
+  Object {
+    "block": Array [
+      Object {
+        "text": "Nested one",
+        "type": "text",
+      },
+    ],
+    "bullet": "1.",
+    "indent": "	",
+    "type": "list",
+  },
+  Object {
+    "block": Array [
+      Object {
+        "text": "Nested two",
+        "type": "text",
+      },
+    ],
+    "bullet": "2.",
+    "indent": "	",
+    "type": "list",
+  },
+  Object {
+    "block": Array [
+      Object {
+        "text": "Two",
+        "type": "text",
+      },
+    ],
+    "bullet": "2.",
+    "indent": "",
+    "type": "list",
+  },
+]
+`;
+
+exports[`Lists indented <ol> 2`] = `
+Array [
+  Object {
+    "block": Array [
+      Object {
+        "text": "One",
+        "type": "text",
+      },
+    ],
+    "bullet": "1)",
+    "indent": "",
+    "type": "list",
+  },
+  Object {
+    "block": Array [
+      Object {
+        "text": "Nested one",
+        "type": "text",
+      },
+    ],
+    "bullet": "1)",
+    "indent": "	",
+    "type": "list",
+  },
+  Object {
+    "block": Array [
+      Object {
+        "text": "Nested two",
+        "type": "text",
+      },
+    ],
+    "bullet": "2)",
+    "indent": "	",
+    "type": "list",
+  },
+  Object {
+    "block": Array [
+      Object {
+        "text": "Two",
+        "type": "text",
+      },
+    ],
+    "bullet": "2)",
+    "indent": "",
+    "type": "list",
+  },
+]
+`;
+
+exports[`Lists indented <ol> 3`] = `
+Array [
+  Object {
+    "block": Array [
+      Object {
+        "text": "One",
+        "type": "text",
+      },
+    ],
+    "bullet": "1.",
+    "indent": "",
+    "type": "list",
+  },
+  Object {
+    "block": Array [
+      Object {
+        "text": "Nested one",
+        "type": "text",
+      },
+    ],
+    "bullet": "1)",
+    "indent": "	",
+    "type": "list",
+  },
+  Object {
+    "block": Array [
+      Object {
+        "text": "Nested two",
+        "type": "text",
+      },
+    ],
+    "bullet": "2)",
+    "indent": "	",
+    "type": "list",
+  },
+  Object {
+    "block": Array [
+      Object {
+        "text": "Two",
+        "type": "text",
+      },
+    ],
+    "bullet": "2.",
+    "indent": "",
+    "type": "list",
+  },
+]
+`;
+
+exports[`Lists indented <ol> 4`] = `
+Array [
+  Object {
+    "block": Array [
+      Object {
+        "text": "One",
+        "type": "text",
+      },
+    ],
+    "bullet": "1)",
+    "indent": "",
+    "type": "list",
+  },
+  Object {
+    "block": Array [
+      Object {
+        "text": "Nested one",
+        "type": "text",
+      },
+    ],
+    "bullet": "1.",
+    "indent": "	",
+    "type": "list",
+  },
+  Object {
+    "block": Array [
+      Object {
+        "text": "Nested two",
+        "type": "text",
+      },
+    ],
+    "bullet": "2.",
+    "indent": "	",
+    "type": "list",
+  },
+  Object {
+    "block": Array [
+      Object {
+        "text": "Two",
+        "type": "text",
+      },
+    ],
+    "bullet": "2)",
+    "indent": "",
+    "type": "list",
+  },
+]
+`;
+
+exports[`Lists indented <ul> 1`] = `
+Array [
+  Object {
+    "block": Array [
+      Object {
+        "text": "One",
+        "type": "text",
+      },
+    ],
+    "bullet": "+",
+    "indent": "",
+    "type": "list",
+  },
+  Object {
+    "block": Array [
+      Object {
+        "text": "Nested one",
+        "type": "text",
+      },
+    ],
+    "bullet": "*",
+    "indent": "	",
+    "type": "list",
+  },
+  Object {
+    "block": Array [
+      Object {
+        "text": "Nested two",
+        "type": "text",
+      },
+    ],
+    "bullet": "*",
+    "indent": "	",
+    "type": "list",
+  },
+  Object {
+    "block": Array [
+      Object {
+        "text": "Two",
+        "type": "text",
+      },
+    ],
+    "bullet": "-",
+    "indent": "",
+    "type": "list",
+  },
+]
+`;
+
+exports[`Lists spaced out <ul> 1`] = `
+Array [
+  Object {
+    "block": Array [
+      Object {
+        "text": "One",
+        "type": "text",
+      },
+    ],
+    "bullet": "*",
+    "indent": "",
+    "type": "list",
+  },
+  Object {
+    "text": "
+
+",
+    "type": "break",
+  },
+  Object {
+    "block": Array [
+      Object {
+        "text": "Two",
+        "type": "text",
+      },
+    ],
+    "bullet": "*",
+    "indent": "",
+    "type": "list",
+  },
+  Object {
+    "text": "
+
+",
+    "type": "break",
+  },
+  Object {
+    "block": Array [
+      Object {
+        "text": "Three",
+        "type": "text",
+      },
+    ],
+    "bullet": "*",
+    "indent": "",
+    "type": "list",
+  },
+]
+`;
+
+exports[`Multi-line list items closed by <br> 1`] = `
+Array [
+  Object {
+    "block": Array [
+      Object {
+        "text": "foo
+bar",
+        "type": "text",
+      },
+    ],
+    "bullet": "*",
+    "indent": "",
+    "type": "list",
+  },
+  Object {
+    "text": "
+
+",
+    "type": "break",
+  },
+  Object {
+    "text": "  baz",
+    "type": "text",
+  },
+]
+`;
+
+exports[`Multi-line list items closed by next <li> 1`] = `
+Array [
+  Object {
+    "block": Array [
+      Object {
+        "text": "foo
+bar",
+        "type": "text",
+      },
+    ],
+    "bullet": "*",
+    "indent": "",
+    "type": "list",
+  },
+  Object {
+    "block": Array [
+      Object {
+        "text": "baz",
+        "type": "text",
+      },
+    ],
+    "bullet": "*",
+    "indent": "",
+    "type": "list",
+  },
+]
+`;
+
+exports[`Multi-line list items indentation styles 1`] = `
+Array [
+  Object {
+    "block": Array [
+      Object {
+        "text": "foo
+bar
+baz",
+        "type": "text",
+      },
+    ],
+    "bullet": "*",
+    "indent": "",
+    "type": "list",
+  },
+]
+`;
+
+exports[`Multi-line list items indentation styles 2`] = `
+Array [
+  Object {
+    "block": Array [
+      Object {
+        "text": "foo
+bar
+baz",
+        "type": "text",
+      },
+    ],
+    "bullet": "*",
+    "indent": "",
+    "type": "list",
+  },
+]
+`;
+
+exports[`Multi-line list items indentation styles 3`] = `
+Array [
+  Object {
+    "block": Array [
+      Object {
+        "text": "foo
+bar
+baz",
+        "type": "text",
+      },
+    ],
+    "bullet": "*",
+    "indent": "",
+    "type": "list",
+  },
+]
+`;
+
+exports[`Multi-line list items indentation styles 4`] = `
+Array [
+  Object {
+    "block": Array [
+      Object {
+        "text": "foo
+bar
+baz",
+        "type": "text",
+      },
+    ],
+    "bullet": "*",
+    "indent": "",
+    "type": "list",
+  },
+]
+`;
+
+exports[`Multi-line list items mixed indentation 1`] = `
+Array [
+  Object {
+    "block": Array [
+      Object {
+        "text": "a1
+a2
+a3
+a4
+a5",
+        "type": "text",
+      },
+    ],
+    "bullet": "*",
+    "indent": "",
+    "type": "list",
+  },
+]
+`;
+
+exports[`Multi-line list items with indented bullet 1`] = `
+Array [
+  Object {
+    "block": Array [
+      Object {
+        "text": "foo",
+        "type": "text",
+      },
+    ],
+    "bullet": "*",
+    "indent": "",
+    "type": "list",
+  },
+  Object {
+    "block": Array [
+      Object {
+        "text": "bar
+baz",
+        "type": "text",
+      },
+    ],
+    "bullet": "*",
+    "indent": "	",
+    "type": "list",
+  },
+]
+`;
+
+exports[`Multi-line list items with indented bullet 2`] = `
+Array [
+  Object {
+    "block": Array [
+      Object {
+        "text": "foo",
+        "type": "text",
+      },
+    ],
+    "bullet": "*",
+    "indent": "",
+    "type": "list",
+  },
+  Object {
+    "block": Array [
+      Object {
+        "text": "bar
+baz",
+        "type": "text",
+      },
+    ],
+    "bullet": "*",
+    "indent": "	",
+    "type": "list",
+  },
+]
+`;
+
+exports[`Multi-line list items with indented bullet 3`] = `
+Array [
+  Object {
+    "block": Array [
+      Object {
+        "text": "foo",
+        "type": "text",
+      },
+    ],
+    "bullet": "*",
+    "indent": "",
+    "type": "list",
+  },
+  Object {
+    "block": Array [
+      Object {
+        "text": "bar
+baz",
+        "type": "text",
+      },
+    ],
+    "bullet": "*",
+    "indent": "  ",
+    "type": "list",
+  },
+]
+`;
+
+exports[`Multi-line list items with indented bullet 4`] = `
+Array [
+  Object {
+    "block": Array [
+      Object {
+        "text": "foo",
+        "type": "text",
+      },
+    ],
+    "bullet": "*",
+    "indent": "",
+    "type": "list",
+  },
+  Object {
+    "block": Array [
+      Object {
+        "text": "bar
+baz",
+        "type": "text",
+      },
+    ],
+    "bullet": "*",
+    "indent": "  ",
+    "type": "list",
+  },
+]
+`;
+
+exports[`Multi-line list items with indented bullet 5`] = `
+Array [
+  Object {
+    "block": Array [
+      Object {
+        "text": "foo",
+        "type": "text",
+      },
+    ],
+    "bullet": "*",
+    "indent": "",
+    "type": "list",
+  },
+  Object {
+    "block": Array [
+      Object {
+        "text": "bar
+baz",
+        "type": "text",
+      },
+    ],
+    "bullet": "*",
+    "indent": "    ",
+    "type": "list",
+  },
+]
+`;
+
+exports[`Multi-line list items with indented bullet 6`] = `
+Array [
+  Object {
+    "block": Array [
+      Object {
+        "text": "foo",
+        "type": "text",
+      },
+    ],
+    "bullet": "*",
+    "indent": "",
+    "type": "list",
+  },
+  Object {
+    "block": Array [
+      Object {
+        "text": "bar
+baz",
+        "type": "text",
+      },
+    ],
+    "bullet": "*",
+    "indent": "    ",
+    "type": "list",
+  },
+]
+`;
+
+exports[`Quotes empty line 1`] = `
+Array [
+  Object {
+    "block": Array [
+      Object {
+        "text": "To be or not to be",
+        "type": "text",
+      },
+      Object {
+        "text": "
+
+",
+        "type": "break",
+      },
+      Object {
+        "text": "That is the question",
+        "type": "text",
+      },
+    ],
+    "type": "quote",
+  },
+]
+`;
+
+exports[`Quotes multi-line 1`] = `
+Array [
+  Object {
+    "block": Array [
+      Object {
+        "text": "in
+the
+quote",
+        "type": "text",
+      },
+    ],
+    "type": "quote",
+  },
+  Object {
+    "text": "
+
+",
+    "type": "break",
+  },
+  Object {
+    "text": "and outside",
+    "type": "text",
+  },
+]
+`;
+
+exports[`Quotes multi-line 2`] = `
+Array [
+  Object {
+    "block": Array [
+      Object {
+        "text": "in
+the
+quote",
+        "type": "text",
+      },
+    ],
+    "type": "quote",
+  },
+  Object {
+    "text": "
+
+",
+    "type": "break",
+  },
+  Object {
+    "text": "and outside",
+    "type": "text",
+  },
+]
+`;
+
+exports[`Quotes nested 1`] = `
+Array [
+  Object {
+    "block": Array [
+      Object {
+        "block": Array [
+          Object {
+            "text": "To be or not to be
+That is the question",
+            "type": "text",
+          },
+        ],
+        "type": "quote",
+      },
+    ],
+    "type": "quote",
+  },
+]
+`;
+
+exports[`Quotes with bulleted list 1`] = `
+Array [
+  Object {
+    "block": Array [
+      Object {
+        "block": Array [
+          Object {
+            "text": "one",
+            "type": "text",
+          },
+        ],
+        "bullet": "-",
+        "indent": "",
+        "type": "list",
+      },
+      Object {
+        "block": Array [
+          Object {
+            "text": "two",
+            "type": "text",
+          },
+        ],
+        "bullet": "-",
+        "indent": "",
+        "type": "list",
+      },
+      Object {
+        "block": Array [
+          Object {
+            "text": "three
+hello",
+            "type": "text",
+          },
+        ],
+        "bullet": "-",
+        "indent": "",
+        "type": "list",
+      },
+    ],
+    "type": "quote",
+  },
+]
+`;
+
+exports[`Quotes with text 1`] = `
+Array [
+  Object {
+    "block": Array [
+      Object {
+        "text": "To be or not to be",
+        "type": "text",
+      },
+    ],
+    "type": "quote",
+  },
+]
+`;
+
+exports[`Strike-through using squiggles 1`] = `
+Array [
+  Object {
+    "text": "I like ",
+    "type": "text",
+  },
+  Object {
+    "block": Array [
+      Object {
+        "text": "tiny",
+        "type": "text",
+      },
+    ],
+    "type": "strike",
+  },
+  Object {
+    "text": " libraries",
+    "type": "text",
+  },
+]
+`;
+
+exports[`Titles <h1> 1`] = `
+Array [
+  Object {
+    "block": Array [
+      Object {
+        "text": "I like tiny libraries",
+        "type": "text",
+      },
+    ],
+    "rank": 1,
+    "type": "title",
+  },
+]
+`;
+
+exports[`Titles <h1> 2`] = `
+Array [
+  Object {
+    "block": Array [
+      Object {
+        "text": "I like tiny libraries",
+        "type": "text",
+      },
+    ],
+    "rank": 1,
+    "type": "title",
+  },
+]
+`;
+
+exports[`Titles <h2> 1`] = `
+Array [
+  Object {
+    "block": Array [
+      Object {
+        "text": "I like tiny libraries",
+        "type": "text",
+      },
+    ],
+    "rank": 2,
+    "type": "title",
+  },
+]
+`;
+
+exports[`Titles <h2> 2`] = `
+Array [
+  Object {
+    "block": Array [
+      Object {
+        "text": "I like tiny libraries",
+        "type": "text",
+      },
+    ],
+    "rank": 2,
+    "type": "title",
+  },
+]
+`;
+
+exports[`Titles <h3> thru <h6> 1`] = `
+Array [
+  Object {
+    "block": Array [
+      Object {
+        "text": "I like tiny libraries",
+        "type": "text",
+      },
+    ],
+    "rank": 3,
+    "type": "title",
+  },
+]
+`;
+
+exports[`Titles <h3> thru <h6> 2`] = `
+Array [
+  Object {
+    "block": Array [
+      Object {
+        "text": "I like tiny libraries",
+        "type": "text",
+      },
+    ],
+    "rank": 4,
+    "type": "title",
+  },
+]
+`;
+
+exports[`Titles <h3> thru <h6> 3`] = `
+Array [
+  Object {
+    "block": Array [
+      Object {
+        "text": "I like tiny libraries",
+        "type": "text",
+      },
+    ],
+    "rank": 5,
+    "type": "title",
+  },
+]
+`;
+
+exports[`Titles <h3> thru <h6> 4`] = `
+Array [
+  Object {
+    "block": Array [
+      Object {
+        "text": "I like tiny libraries",
+        "type": "text",
+      },
+    ],
+    "rank": 6,
+    "type": "title",
+  },
+]
+`;
+
+exports[`Titles empty title 1`] = `
+Array [
+  Object {
+    "block": Array [],
+    "rank": 1,
+    "type": "title",
+  },
+]
+`;
+
+exports[`Titles empty title 2`] = `
+Array [
+  Object {
+    "block": Array [],
+    "rank": 2,
+    "type": "title",
+  },
+]
+`;
+
+exports[`Titles empty title 3`] = `
+Array [
+  Object {
+    "block": Array [],
+    "rank": 3,
+    "type": "title",
+  },
+]
+`;
+
+exports[`Titles empty title 4`] = `
+Array [
+  Object {
+    "block": Array [],
+    "rank": 4,
+    "type": "title",
+  },
+]
+`;

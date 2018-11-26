@@ -1,0 +1,25 @@
+{
+  "name": "markdown-ast",
+  "version": "0.0.0",
+  "description": "Markdown AST parser",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "index.d.ts"
+  ],
+  "scripts": {
+    "test": "jest --coverage",
+    "debug": "jest --watch"
+  },
+  "devDependencies": {
+    "coveralls": "^3.0.2",
+    "jest": "^23.6.0",
+    "prettier": "^1.15.2"
+  },
+  "keywords": [
+    "markdown",
+    "ast",
+    "parser",
+    "md"
+  ]
+}
