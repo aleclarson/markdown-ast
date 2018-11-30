@@ -1,4 +1,4 @@
-const parse: (input: string) => Document
+declare const parse: (input: string) => Node[]
 export default parse
 
 export interface Node {
