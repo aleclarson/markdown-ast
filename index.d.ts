@@ -1,53 +1,55 @@
 declare const parse: (input: string) => Node[]
 export default parse
 
-export interface Node {
-  type: (
-    | Text
-    | Link
-    | LinkDefinition
-    | CodeSpan
-    | CodeBlock
-    | Bold
-    | Italic
-    | Strike
-    | Border
-    | Title
-    | Quote
-    | Image
-    | List)['type']
-}
-export interface Text {
-  type: 'text'
-  text: string
-}
-export interface Block {
+export type Node =
+  | Bold
+  | Border
+  | Break
+  | CodeBlock
+  | CodeSpan
+  | Image
+  | Italic
+  | Link
+  | LinkDefinition
+  | List
+  | Quote
+  | Strike
+  | Text
+  | Title
+
+interface Block {
   block: Node[]
 }
+
 export interface Bold extends Block {
   type: 'bold'
 }
-export interface Italic extends Block {
-  type: 'italic'
-}
-export interface Strike extends Block {
-  type: 'strike'
-}
-export interface Border extends Text {
+export interface Border {
   type: 'border'
+  text: string
 }
-export interface Title extends Block {
-  type: 'title'
-  rank: 1 | 2 | 3 | 4 | 5 | 6
-}
-export interface Break extends Text {
+export interface Break {
   type: 'break'
+  text: string
+}
+export interface CodeBlock {
+  type: 'codeBlock'
+  code: string
+  syntax: string
+  indent: string
+}
+export interface CodeSpan {
+  type: 'codeSpan'
+  code: string
 }
 export interface Image {
   type: 'image'
   alt: string
   url: string
   ref: string
+}
+export interface Italic extends Block {
+  type: 'italic'
 }
 export interface Link extends Block {
   type: 'link'
@@ -59,21 +61,22 @@ export interface LinkDefinition {
   key: string
   url: string
 }
-export interface CodeSpan {
-  type: 'codeSpan'
-  code: string
-}
-export interface CodeBlock {
-  type: 'codeBlock'
-  code: string
-  syntax: string
-  indent: string
-}
-export interface Quote extends Block {
-  type: 'quote'
-}
 export interface List extends Block {
   type: 'list'
   indent: string
   bullet: string
+}
+export interface Quote extends Block {
+  type: 'quote'
+}
+export interface Strike extends Block {
+  type: 'strike'
+}
+export interface Text {
+  type: 'text'
+  text: string
+}
+export interface Title extends Block {
+  type: 'title'
+  rank: 1 | 2 | 3 | 4 | 5 | 6
 }
