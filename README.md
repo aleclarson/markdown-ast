@@ -24,6 +24,14 @@ Please file an issue if you run into any inconsistencies.
 
 &nbsp;
 
+## Notable behavior
+
+- Node locations are _not_ tracked.
+- No HTML parsing. Embedded HTML is plain text.
+- Single `\n` chars are removed from the start/end of plain text.
+
+&nbsp;
+
 ## Node types
 
 Every node has a `type` property equal to one of these:
@@ -61,11 +69,3 @@ include `border`, `break`, `list`, `quote`, and `title` nodes.
 
 "Recursive blocks" use their own parsing context to process any nested nodes.
 These include `list`, `quote`, and `title` nodes.
-
-&nbsp;
-
-### Notable behavior
-
-- Node locations are _not_ tracked.
-- No HTML parsing. Embedded HTML is plain text.
-- Single `\n` chars are removed from the start/end of plain text.
