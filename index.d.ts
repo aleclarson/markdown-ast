@@ -73,6 +73,7 @@ export interface Quote extends Block {
 }
 export interface Strike extends Block {
   type: 'strike'
+  style: '~~'
 }
 export interface Text {
   type: 'text'
