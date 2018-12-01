@@ -1,6 +1,6 @@
 {
   "name": "markdown-ast",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Markdown AST parser",
   "license": "MIT",
   "main": "index.js",
