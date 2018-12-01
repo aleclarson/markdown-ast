@@ -13,6 +13,7 @@ Array [
         "type": "text",
       },
     ],
+    "style": "**",
     "type": "bold",
   },
   Object {
@@ -35,6 +36,7 @@ Array [
         "type": "text",
       },
     ],
+    "style": "__",
     "type": "bold",
   },
   Object {
@@ -59,6 +61,7 @@ Array [
             "type": "text",
           },
         ],
+        "style": "**",
         "type": "bold",
       },
       Object {
@@ -66,6 +69,7 @@ Array [
         "type": "text",
       },
     ],
+    "style": "_",
     "type": "italic",
   },
 ]
@@ -86,6 +90,7 @@ Array [
             "type": "text",
           },
         ],
+        "style": "**",
         "type": "bold",
       },
       Object {
@@ -93,6 +98,7 @@ Array [
         "type": "text",
       },
     ],
+    "style": "*",
     "type": "italic",
   },
 ]
@@ -113,6 +119,7 @@ Array [
             "type": "text",
           },
         ],
+        "style": "__",
         "type": "bold",
       },
       Object {
@@ -120,6 +127,7 @@ Array [
         "type": "text",
       },
     ],
+    "style": "_",
     "type": "italic",
   },
 ]
@@ -453,6 +461,7 @@ exports[`Edge cases unclosed bold 1`] = `
 Array [
   Object {
     "block": Array [],
+    "style": "**",
     "type": "bold",
   },
 ]
@@ -462,6 +471,7 @@ exports[`Edge cases unclosed bold 2`] = `
 Array [
   Object {
     "block": Array [],
+    "style": "__",
     "type": "bold",
   },
 ]
@@ -476,6 +486,7 @@ Array [
         "type": "text",
       },
     ],
+    "style": "**",
     "type": "bold",
   },
 ]
@@ -490,6 +501,7 @@ Array [
         "type": "text",
       },
     ],
+    "style": "__",
     "type": "bold",
   },
 ]
@@ -584,6 +596,7 @@ exports[`Edge cases unclosed italic 1`] = `
 Array [
   Object {
     "block": Array [],
+    "style": "*",
     "type": "italic",
   },
 ]
@@ -593,6 +606,7 @@ exports[`Edge cases unclosed italic 2`] = `
 Array [
   Object {
     "block": Array [],
+    "style": "_",
     "type": "italic",
   },
 ]
@@ -607,6 +621,7 @@ Array [
         "type": "text",
       },
     ],
+    "style": "*",
     "type": "italic",
   },
 ]
@@ -621,6 +636,7 @@ Array [
         "type": "text",
       },
     ],
+    "style": "_",
     "type": "italic",
   },
 ]
@@ -697,6 +713,7 @@ exports[`Edge cases unclosed strike-through 1`] = `
 Array [
   Object {
     "block": Array [],
+    "style": "~~",
     "type": "strike",
   },
 ]
@@ -711,6 +728,7 @@ Array [
         "type": "text",
       },
     ],
+    "style": "~~",
     "type": "strike",
   },
 ]
@@ -729,6 +747,7 @@ Array [
         "type": "text",
       },
     ],
+    "style": "_",
     "type": "italic",
   },
 ]
@@ -748,9 +767,11 @@ Array [
       },
       Object {
         "block": Array [],
+        "style": "_",
         "type": "italic",
       },
     ],
+    "style": "__",
     "type": "bold",
   },
 ]
@@ -917,6 +938,7 @@ Array [
         "type": "text",
       },
     ],
+    "style": "*",
     "type": "italic",
   },
   Object {
@@ -939,6 +961,7 @@ Array [
         "type": "text",
       },
     ],
+    "style": "_",
     "type": "italic",
   },
   Object {
@@ -963,6 +986,7 @@ Array [
             "type": "text",
           },
         ],
+        "style": "*",
         "type": "italic",
       },
       Object {
@@ -970,6 +994,7 @@ Array [
         "type": "text",
       },
     ],
+    "style": "__",
     "type": "bold",
   },
 ]
@@ -990,6 +1015,7 @@ Array [
             "type": "text",
           },
         ],
+        "style": "*",
         "type": "italic",
       },
       Object {
@@ -997,6 +1023,7 @@ Array [
         "type": "text",
       },
     ],
+    "style": "**",
     "type": "bold",
   },
 ]
@@ -1017,6 +1044,7 @@ Array [
             "type": "text",
           },
         ],
+        "style": "_",
         "type": "italic",
       },
       Object {
@@ -1024,6 +1052,7 @@ Array [
         "type": "text",
       },
     ],
+    "style": "__",
     "type": "bold",
   },
 ]
@@ -1054,6 +1083,7 @@ Array [
             "type": "text",
           },
         ],
+        "style": "**",
         "type": "bold",
       },
     ],
@@ -1079,6 +1109,7 @@ Array [
             "type": "text",
           },
         ],
+        "style": "_",
         "type": "italic",
       },
     ],
@@ -2268,6 +2299,7 @@ Array [
         "type": "text",
       },
     ],
+    "style": "~~",
     "type": "strike",
   },
   Object {

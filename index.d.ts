@@ -23,6 +23,7 @@ interface Block {
 
 export interface Bold extends Block {
   type: 'bold'
+  style: '**' | '__'
 }
 export interface Border {
   type: 'border'
@@ -50,6 +51,7 @@ export interface Image {
 }
 export interface Italic extends Block {
   type: 'italic'
+  style: '*' | '_'
 }
 export interface Link extends Block {
   type: 'link'

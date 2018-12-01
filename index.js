@@ -301,6 +301,7 @@ const parse = (input, top = []) => {
         blocks.push({
           type,
           block: [],
+          style: match[i],
         })
       }
     }
