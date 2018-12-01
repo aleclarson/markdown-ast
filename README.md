@@ -37,19 +37,19 @@ Please file an issue if you run into any inconsistencies.
 Every node has a `type` property equal to one of these:
 
 - `bold`: `__text__` or `**text**`
-- `border`: 3+ character sequence of `/[*-_]/` w/ optional spaces between
+- `border`: 3+ character sequence of `[*-_]` w/ optional spaces between
 - `break`: `\n\n` or `\r\n\r\n` or `\n` or `\r\n`
 - `codeBlock`: triple backticks or 4-spaces/tab indented
 - `codeSpan`: inline backticks
-- `image`: `![alt](url)`
+- `image`: `![alt](url)` or `![alt][key]` or just `![altAsKey]`
 - `italic`: `_text_` or `*text*`
-- `link`: `[text](url)` or `[text][key]`
+- `link`: `[text](url)` or `[text][key]` or just `[textAsKey]`
 - `linkDef`: `[key]: url`
-- `list`: markdown w/ `/[-+*]|\d+[\.\)]/` prefix
+- `list`: markdown w/ `[-+*]|\d+[\.\)]` prefix
 - `quote`: markdown w/ `>` prefix
 - `strike`: `~~text~~`
 - `text`
-- `title`: markdown w/ `/#{1,6}/` prefix or underlined w/ 3+ `=` or `-` symbols
+- `title`: markdown w/ `#{1,6}` prefix or underlined w/ 3+ `=|-` symbols
 
 Available properties are defined [here](./index.d.ts).
 
