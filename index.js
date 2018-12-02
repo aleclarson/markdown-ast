@@ -221,7 +221,7 @@ const parse = (input, top = []) => {
           if (node.type == 'link') {
             node = {
               type: 'linkDef',
-              key: text.toLowerCase(),
+              key: text,
               url: match[i + 2],
             }
           } else {
@@ -248,7 +248,7 @@ const parse = (input, top = []) => {
             }
             // [foo][bar]
             else {
-              node.ref = target.toLowerCase()
+              node.ref = target
             }
           }
         }
