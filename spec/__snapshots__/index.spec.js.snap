@@ -1058,6 +1058,16 @@ Array [
 ]
 `;
 
+exports[`Link definitions may contain markdown syntax 1`] = `
+Array [
+  Object {
+    "key": "__proto__",
+    "type": "linkDef",
+    "url": "https://github.com/aleclarson/markdown-ast",
+  },
+]
+`;
+
 exports[`Link definitions must come first on their line 1`] = `
 Array [
   Object {

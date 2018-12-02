@@ -109,9 +109,12 @@ describe('Links', () => {
 })
 
 describe('Link definitions', () => {
+  let link = 'https://github.com/aleclarson/markdown-ast'
   test('must come first on their line', () => {
-    let link = 'https://github.com/aleclarson/markdown-ast'
     expect(md(`[foo]: ${link}`)).toMatchSnapshot()
+  })
+  test('may contain markdown syntax', () => {
+    expect(md(`[__proto__]: ${link}`)).toMatchSnapshot()
   })
 })
 
