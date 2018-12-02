@@ -414,7 +414,22 @@ Array [
 ]
 `;
 
-exports[`Code blocks indented code must start its line 1`] = `
+exports[`Code blocks indented empty with text immediately after 1`] = `
+Array [
+  Object {
+    "code": "",
+    "indent": "    ",
+    "syntax": "",
+    "type": "codeBlock",
+  },
+  Object {
+    "text": "foo",
+    "type": "text",
+  },
+]
+`;
+
+exports[`Code blocks indented must be first on its line 1`] = `
 Array [
   Object {
     "text": "|    var a = 1",
@@ -423,24 +438,24 @@ Array [
 ]
 `;
 
-exports[`Code blocks using indentation 1`] = `
+exports[`Code blocks indented with spaces 1`] = `
 Array [
   Object {
     "code": "var a = 1
 var b = 2",
-    "indent": "	",
+    "indent": "    ",
     "syntax": "",
     "type": "codeBlock",
   },
 ]
 `;
 
-exports[`Code blocks using indentation 2`] = `
+exports[`Code blocks indented with tabs 1`] = `
 Array [
   Object {
     "code": "var a = 1
 var b = 2",
-    "indent": "    ",
+    "indent": "	",
     "syntax": "",
     "type": "codeBlock",
   },

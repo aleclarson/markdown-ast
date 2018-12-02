@@ -244,11 +244,6 @@ describe('Code spans', () => {
 })
 
 describe('Code blocks', () => {
-  test('using indentation', () => {
-    expect(md('\tvar a = 1\n\tvar b = 2')).toMatchSnapshot()
-    expect(md('    var a = 1\n    var b = 2')).toMatchSnapshot()
-  })
-
   test('using triple backticks', () => {
     let code = 'function approx(n) {}'
     expect(md('```\n' + code + '\n```')).toMatchSnapshot()
@@ -259,8 +254,21 @@ describe('Code blocks', () => {
     expect(md('```js\n' + code + '\n```')).toMatchSnapshot()
   })
 
-  test('indented code must start its line', () => {
-    expect(md('|    var a = 1')).toMatchSnapshot()
+  describe('indented', () => {
+    test('with tabs', () => {
+      expect(md('\tvar a = 1\n\tvar b = 2')).toMatchSnapshot()
+    })
+    test('with spaces', () => {
+      expect(md('    var a = 1\n    var b = 2')).toMatchSnapshot()
+    })
+
+    test('must be first on its line', () => {
+      expect(md('|    var a = 1')).toMatchSnapshot()
+    })
+
+    test('empty with text immediately after', () => {
+      expect(md('    \nfoo')).toMatchSnapshot()
+    })
   })
 })
 
