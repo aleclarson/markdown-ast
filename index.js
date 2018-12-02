@@ -294,12 +294,12 @@ const parse = (input, top = []) => {
 
     // Inline formatting (-0 to +0)
     else if (match[++i]) {
-      let type = match[i]
-      type = type.length < 2 ? 'italic' : type == '~~' ? 'strike' : 'bold'
+      let style = match[i]
+      let type = style.length < 2 ? 'italic' : style == '~~' ? 'strike' : 'bold'
 
       // Close a matching block..
       let node = blocks[blocks.length - 1]
-      if (node && node.type == type) {
+      if (node && node.type == type && node.style == style) {
         addNode(blocks.pop())
       }
       // ..or open a new block.
@@ -308,7 +308,7 @@ const parse = (input, top = []) => {
         blocks.push({
           type,
           block: [],
-          style: match[i],
+          style,
         })
       }
     }
