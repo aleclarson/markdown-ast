@@ -242,6 +242,10 @@ describe('Code blocks', () => {
     let code = 'function approx(n) {}'
     expect(md('```js\n' + code + '\n```')).toMatchSnapshot()
   })
+
+  test('indented code must start its line', () => {
+    expect(md('|    var a = 1')).toMatchSnapshot()
+  })
 })
 
 describe('Quotes', () => {

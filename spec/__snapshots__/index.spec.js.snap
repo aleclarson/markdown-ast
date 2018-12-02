@@ -394,6 +394,15 @@ Array [
 ]
 `;
 
+exports[`Code blocks indented code must start its line 1`] = `
+Array [
+  Object {
+    "text": "|    var a = 1",
+    "type": "text",
+  },
+]
+`;
+
 exports[`Code blocks using indentation 1`] = `
 Array [
   Object {
