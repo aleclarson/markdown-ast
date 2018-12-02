@@ -1,5 +1,15 @@
 const md = require('..')
 
+test('preserves EOF trailing newline', () => {
+  expect(md('foo\n')).toMatchSnapshot()
+  // List
+  expect(md('- a\n- b\n')).toMatchSnapshot()
+  // Title
+  expect(md('# foo\n')).toMatchSnapshot()
+  // Code block
+  expect(md('```\nfoo\n```\n')).toMatchSnapshot()
+})
+
 describe('Bold', () => {
   test('star syntax', () => {
     expect(md('I **like** tiny libraries')).toMatchSnapshot()

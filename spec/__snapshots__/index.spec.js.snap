@@ -2468,3 +2468,77 @@ Array [
   },
 ]
 `;
+
+exports[`preserves EOF trailing newline 1`] = `
+Array [
+  Object {
+    "text": "foo
+",
+    "type": "text",
+  },
+]
+`;
+
+exports[`preserves EOF trailing newline 2`] = `
+Array [
+  Object {
+    "block": Array [
+      Object {
+        "text": "a",
+        "type": "text",
+      },
+    ],
+    "bullet": "-",
+    "indent": "",
+    "type": "list",
+  },
+  Object {
+    "block": Array [
+      Object {
+        "text": "b
+",
+        "type": "text",
+      },
+    ],
+    "bullet": "-",
+    "indent": "",
+    "type": "list",
+  },
+]
+`;
+
+exports[`preserves EOF trailing newline 3`] = `
+Array [
+  Object {
+    "block": Array [
+      Object {
+        "text": "foo",
+        "type": "text",
+      },
+    ],
+    "rank": 1,
+    "type": "title",
+  },
+  Object {
+    "text": "
+",
+    "type": "text",
+  },
+]
+`;
+
+exports[`preserves EOF trailing newline 4`] = `
+Array [
+  Object {
+    "code": "foo",
+    "indent": "",
+    "syntax": "",
+    "type": "codeBlock",
+  },
+  Object {
+    "text": "
+",
+    "type": "text",
+  },
+]
+`;
