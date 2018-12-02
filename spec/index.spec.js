@@ -24,6 +24,10 @@ describe('Bold', () => {
     expect(md('*I like **tiny** libraries*')).toMatchSnapshot()
     expect(md('_I like __tiny__ libraries_')).toMatchSnapshot()
   })
+
+  test('must be closed with same style', () => {
+    expect(md('__Hello world**')).toMatchSnapshot()
+  })
 })
 
 describe('Italic', () => {
@@ -39,6 +43,10 @@ describe('Italic', () => {
     expect(md('__I like *tiny* libraries__')).toMatchSnapshot()
     expect(md('**I like *tiny* libraries**')).toMatchSnapshot()
     expect(md('__I like _tiny_ libraries__')).toMatchSnapshot()
+  })
+
+  test('must be closed with same style', () => {
+    expect(md('_Hello world*')).toMatchSnapshot()
   })
 })
 

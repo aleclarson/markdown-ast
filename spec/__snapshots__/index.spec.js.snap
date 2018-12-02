@@ -1,5 +1,25 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Bold must be closed with same style 1`] = `
+Array [
+  Object {
+    "block": Array [
+      Object {
+        "text": "Hello world",
+        "type": "text",
+      },
+      Object {
+        "block": Array [],
+        "style": "**",
+        "type": "bold",
+      },
+    ],
+    "style": "__",
+    "type": "bold",
+  },
+]
+`;
+
 exports[`Bold star syntax 1`] = `
 Array [
   Object {
@@ -930,6 +950,26 @@ Array [
   Object {
     "text": "]",
     "type": "text",
+  },
+]
+`;
+
+exports[`Italic must be closed with same style 1`] = `
+Array [
+  Object {
+    "block": Array [
+      Object {
+        "text": "Hello world",
+        "type": "text",
+      },
+      Object {
+        "block": Array [],
+        "style": "*",
+        "type": "italic",
+      },
+    ],
+    "style": "_",
+    "type": "italic",
   },
 ]
 `;
