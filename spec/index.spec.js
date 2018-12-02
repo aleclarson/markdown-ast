@@ -233,6 +233,14 @@ describe('Code spans', () => {
   test('in between text nodes', () => {
     expect(md('Use `foo(bar, true)` to win bigly.')).toMatchSnapshot()
   })
+
+  test('right before newline in multi-line list item', () => {
+    expect(md('- Use `foo(bar, true)`\nto win bigly.')).toMatchSnapshot()
+  })
+
+  test('right after newline in multi-line list item', () => {
+    expect(md('- Use\n`foo(bar, true)` to win bigly.')).toMatchSnapshot()
+  })
 })
 
 describe('Code blocks', () => {

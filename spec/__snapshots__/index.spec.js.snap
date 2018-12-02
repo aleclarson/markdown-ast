@@ -486,6 +486,56 @@ Array [
 ]
 `;
 
+exports[`Code spans right after newline in multi-line list item 1`] = `
+Array [
+  Object {
+    "block": Array [
+      Object {
+        "text": "Use
+",
+        "type": "text",
+      },
+      Object {
+        "code": "foo(bar, true)",
+        "type": "codeSpan",
+      },
+      Object {
+        "text": " to win bigly.",
+        "type": "text",
+      },
+    ],
+    "bullet": "-",
+    "indent": "",
+    "type": "list",
+  },
+]
+`;
+
+exports[`Code spans right before newline in multi-line list item 1`] = `
+Array [
+  Object {
+    "block": Array [
+      Object {
+        "text": "Use ",
+        "type": "text",
+      },
+      Object {
+        "code": "foo(bar, true)",
+        "type": "codeSpan",
+      },
+      Object {
+        "text": "
+to win bigly.",
+        "type": "text",
+      },
+    ],
+    "bullet": "-",
+    "indent": "",
+    "type": "list",
+  },
+]
+`;
+
 exports[`Edge cases unclosed bold 1`] = `
 Array [
   Object {
