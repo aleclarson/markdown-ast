@@ -72,7 +72,7 @@ const parse = (input, top = []) => {
     // Copy text between this match and the last.
     let text = input.slice(cursor, matchOffset)
 
-    // Trim singular line breaks, except the EOF trailing newline.
+    // Trim singular line breaks, except the EOF newline.
     if (match || !/^\r?\n$/.test(text))
       text = text.replace(match ? /(^\r?\n|\r?\n$)/g : /^\r?\n/g, '')
 
@@ -128,21 +128,30 @@ const parse = (input, top = []) => {
 
       // Find where the first line ends.
       let start = cursor
-      cursor = search(input, '\n', cursor)
+      cursor = search(input, '\n', start)
       if (cursor < 0) cursor = input.length
 
       // Parse multi-line blocks.
       let content = input.slice(start, cursor)
       while (cursor < input.length) {
         let start = cursor + 1
+        // Look for "\n\n" break node.
         if (input.charAt(start) == '\n') break
 
         // Find where the current line ends.
         cursor = search(input, '\n', start)
         if (cursor < 0) cursor = input.length
 
-        // Look for and remove any indentation.
+        // Slice after "> " and before "\n"
         let line = input.slice(start, cursor)
+
+        // Avoid swallowing EOF newline.
+        if (!line) {
+          cursor = start - 1
+          break
+        }
+
+        // When a line starts with a list/quote node, avoid parsing it here.
         if (line.match(breakRE)) {
           cursor = start
           break

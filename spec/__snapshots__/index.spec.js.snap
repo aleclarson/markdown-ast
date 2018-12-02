@@ -2294,7 +2294,7 @@ Array [
       Object {
         "block": Array [
           Object {
-            "text": "one",
+            "text": "line 1",
             "type": "text",
           },
         ],
@@ -2305,7 +2305,7 @@ Array [
       Object {
         "block": Array [
           Object {
-            "text": "two",
+            "text": "line 2",
             "type": "text",
           },
         ],
@@ -2316,8 +2316,7 @@ Array [
       Object {
         "block": Array [
           Object {
-            "text": "three
-hello",
+            "text": "line 3",
             "type": "text",
           },
         ],
@@ -2327,6 +2326,113 @@ hello",
       },
     ],
     "type": "quote",
+  },
+  Object {
+    "text": "
+",
+    "type": "text",
+  },
+]
+`;
+
+exports[`Quotes with bulleted list 2`] = `
+Array [
+  Object {
+    "block": Array [
+      Object {
+        "block": Array [
+          Object {
+            "text": "line 1",
+            "type": "text",
+          },
+        ],
+        "bullet": "-",
+        "indent": "",
+        "type": "list",
+      },
+      Object {
+        "block": Array [
+          Object {
+            "text": "line 2",
+            "type": "text",
+          },
+        ],
+        "bullet": "-",
+        "indent": "",
+        "type": "list",
+      },
+      Object {
+        "block": Array [
+          Object {
+            "text": "line 3.1
+line 3.2",
+            "type": "text",
+          },
+        ],
+        "bullet": "-",
+        "indent": "",
+        "type": "list",
+      },
+    ],
+    "type": "quote",
+  },
+  Object {
+    "text": "
+",
+    "type": "text",
+  },
+]
+`;
+
+exports[`Quotes with bulleted list 3`] = `
+Array [
+  Object {
+    "block": Array [
+      Object {
+        "block": Array [
+          Object {
+            "text": "line 1",
+            "type": "text",
+          },
+        ],
+        "bullet": "-",
+        "indent": "",
+        "type": "list",
+      },
+      Object {
+        "block": Array [
+          Object {
+            "text": "line 2",
+            "type": "text",
+          },
+        ],
+        "bullet": "-",
+        "indent": "",
+        "type": "list",
+      },
+      Object {
+        "block": Array [
+          Object {
+            "text": "line 3.1",
+            "type": "text",
+          },
+        ],
+        "bullet": "-",
+        "indent": "",
+        "type": "list",
+      },
+    ],
+    "type": "quote",
+  },
+  Object {
+    "text": "
+
+",
+    "type": "break",
+  },
+  Object {
+    "text": "after",
+    "type": "text",
   },
 ]
 `;
@@ -2528,7 +2634,7 @@ Array [
 ]
 `;
 
-exports[`preserves EOF trailing newline 1`] = `
+exports[`preserves EOF newline 1`] = `
 Array [
   Object {
     "text": "foo
@@ -2538,7 +2644,7 @@ Array [
 ]
 `;
 
-exports[`preserves EOF trailing newline 2`] = `
+exports[`preserves EOF newline 2`] = `
 Array [
   Object {
     "block": Array [
@@ -2554,8 +2660,7 @@ Array [
   Object {
     "block": Array [
       Object {
-        "text": "b
-",
+        "text": "b",
         "type": "text",
       },
     ],
@@ -2563,10 +2668,15 @@ Array [
     "indent": "",
     "type": "list",
   },
+  Object {
+    "text": "
+",
+    "type": "text",
+  },
 ]
 `;
 
-exports[`preserves EOF trailing newline 3`] = `
+exports[`preserves EOF newline 3`] = `
 Array [
   Object {
     "block": Array [
@@ -2586,7 +2696,7 @@ Array [
 ]
 `;
 
-exports[`preserves EOF trailing newline 4`] = `
+exports[`preserves EOF newline 4`] = `
 Array [
   Object {
     "code": "foo",

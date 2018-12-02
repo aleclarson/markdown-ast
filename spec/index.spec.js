@@ -1,6 +1,6 @@
 const md = require('..')
 
-test('preserves EOF trailing newline', () => {
+test('preserves EOF newline', () => {
   expect(md('foo\n')).toMatchSnapshot()
   // List
   expect(md('- a\n- b\n')).toMatchSnapshot()
@@ -282,7 +282,17 @@ describe('Quotes', () => {
   })
 
   test('with bulleted list', () => {
-    expect(md('> - one\n> - two\n> - three\nhello')).toMatchSnapshot()
+    expect(md('> - line 1\n> - line 2\n> - line 3\n')).toMatchSnapshot()
+
+    // With an EOF newline:
+    expect(
+      md('> - line 1\n> - line 2\n> - line 3.1\nline 3.2\n')
+    ).toMatchSnapshot()
+
+    // With a trailing break node:
+    expect(
+      md('> - line 1\n> - line 2\n> - line 3.1\n\nafter')
+    ).toMatchSnapshot()
   })
 })
 

@@ -11,7 +11,7 @@
   ],
   "scripts": {
     "test": "jest --coverage",
-    "debug": "jest --watch"
+    "debug": "jest -i --watch --no-cache"
   },
   "devDependencies": {
     "coveralls": "^3.0.2",
