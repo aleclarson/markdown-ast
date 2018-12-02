@@ -38,7 +38,7 @@ Every node has a `type` property equal to one of these:
 
 - `bold`: `__text__` or `**text**`
 - `border`: 3+ character sequence of `[*-_]` w/ optional spaces between
-- `break`: `\n\n` or `\r\n\r\n` or `\n` or `\r\n`
+- `break`: `\n\n` or `\r\n\r\n` or `\s\s\n` or `\s\s\r\n`
 - `codeBlock`: triple backticks or 4-spaces/tab indented
 - `codeSpan`: inline backticks
 - `image`: `![alt](url)` or `![alt][key]` or just `![altAsKey]`
