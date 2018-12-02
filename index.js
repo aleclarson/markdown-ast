@@ -289,7 +289,7 @@ const parse = (input, top = []) => {
     // Inline formatting (-0 to +0)
     else if (match[++i]) {
       let type = match[i]
-      type = type.length == 1 ? 'italic' : type[0] == '~' ? 'strike' : 'bold'
+      type = type.length < 2 ? 'italic' : type == '~~' ? 'strike' : 'bold'
 
       // Close a matching block..
       let node = blocks[blocks.length - 1]
