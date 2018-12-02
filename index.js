@@ -43,12 +43,19 @@ const parse = (input, top = []) => {
     }
   }
 
+  let addBlock = node => {
+    // Ensure links are closed properly.
+    if (node.type == 'link')
+      node = { type: 'link', block: node.block, url: '', ref: '' }
+    return addNode(node)
+  }
+
   // Gracefully close any unclosed nodes (as long as `filter` returns truthy).
   let flush = (filter = returnTrue) => {
     for (let i = blocks.length; --i >= 0; ) {
       let node = blocks[i]
       if (!filter(node)) return node
-      addNode(blocks.pop())
+      addBlock(blocks.pop())
     }
   }
 
@@ -204,8 +211,7 @@ const parse = (input, top = []) => {
         blocks.push({
           type: 'link',
           block: [],
-          url: '',
-          ref: '',
+          offset: cursor,
         })
       }
     }
@@ -219,17 +225,17 @@ const parse = (input, top = []) => {
         // [foo]: bar
         if (match[i + 2]) {
           if (node.type == 'link') {
-            node = {
+            addNode({
               type: 'linkDef',
-              key: text,
+              key: input.slice(node.offset, matchOffset),
               url: match[i + 2],
-            }
-          } else {
-            moveTo(match.index + 1) // "]".length
+            })
+            continue
           }
+          moveTo(match.index + 1) // "]".length
         }
 
-        addNode(node)
+        node = addBlock(node)
 
         // [foo](bar) or [foo][bar]
         if (match[i + 1]) {
