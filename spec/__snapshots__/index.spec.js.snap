@@ -430,6 +430,17 @@ Array [
 ]
 `;
 
+exports[`Code blocks fenced empty 1`] = `
+Array [
+  Object {
+    "code": "",
+    "indent": "",
+    "syntax": "",
+    "type": "codeBlock",
+  },
+]
+`;
+
 exports[`Code blocks fenced with explicit syntax 1`] = `
 Array [
   Object {

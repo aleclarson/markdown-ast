@@ -252,6 +252,10 @@ describe('Code blocks', () => {
     test('with explicit syntax', () => {
       expect(md('```js\nvar a = 1\n```')).toMatchSnapshot()
     })
+
+    test('empty', () => {
+      expect(md('```\n```')).toMatchSnapshot()
+    })
   })
 
   describe('indented', () => {
