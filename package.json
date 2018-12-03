@@ -1,6 +1,6 @@
 {
   "name": "markdown-ast",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Markdown AST parser",
   "repository": "aleclarson/markdown-ast",
   "license": "MIT",
