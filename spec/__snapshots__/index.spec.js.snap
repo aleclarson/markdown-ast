@@ -430,6 +430,28 @@ Array [
 ]
 `;
 
+exports[`Code blocks fenced with explicit syntax 1`] = `
+Array [
+  Object {
+    "code": "var a = 1",
+    "indent": "",
+    "syntax": "js",
+    "type": "codeBlock",
+  },
+]
+`;
+
+exports[`Code blocks fenced with triple backticks 1`] = `
+Array [
+  Object {
+    "code": "var a = 1",
+    "indent": "",
+    "syntax": "",
+    "type": "codeBlock",
+  },
+]
+`;
+
 exports[`Code blocks indented empty with text immediately after 1`] = `
 Array [
   Object {
@@ -504,28 +526,6 @@ Array [
 var b = 2",
     "indent": "	",
     "syntax": "",
-    "type": "codeBlock",
-  },
-]
-`;
-
-exports[`Code blocks using triple backticks 1`] = `
-Array [
-  Object {
-    "code": "function approx(n) {}",
-    "indent": "",
-    "syntax": "",
-    "type": "codeBlock",
-  },
-]
-`;
-
-exports[`Code blocks with syntax highlighting 1`] = `
-Array [
-  Object {
-    "code": "function approx(n) {}",
-    "indent": "",
-    "syntax": "js",
     "type": "codeBlock",
   },
 ]

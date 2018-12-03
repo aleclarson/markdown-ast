@@ -244,14 +244,14 @@ describe('Code spans', () => {
 })
 
 describe('Code blocks', () => {
-  test('using triple backticks', () => {
-    let code = 'function approx(n) {}'
-    expect(md('```\n' + code + '\n```')).toMatchSnapshot()
-  })
+  describe('fenced', () => {
+    test('with triple backticks', () => {
+      expect(md('```\nvar a = 1\n```')).toMatchSnapshot()
+    })
 
-  test('with syntax highlighting', () => {
-    let code = 'function approx(n) {}'
-    expect(md('```js\n' + code + '\n```')).toMatchSnapshot()
+    test('with explicit syntax', () => {
+      expect(md('```js\nvar a = 1\n```')).toMatchSnapshot()
+    })
   })
 
   describe('indented', () => {
