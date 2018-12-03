@@ -20,6 +20,29 @@ const search = (input, target, cursor) => {
   }
 }
 
+const Parser = {
+  create: () => ({
+    __proto__: Parser.methods,
+    /** The primary token scanner */
+    lexer: /(^([*_-])\s*\2(?:\s*\2)+$)|(?:^(\s*)([>*+-]|\d+[.\)])\s+)|(?:^``` *(\w*)\n([\s\S]*?)```$)|(^(?:(?:\t|    )[^\n]*(?:\n|$))+)|(\!?\[)|(\](?:(\(|\[)|\:\s*(.+)$)?)|(?:^([^\s].*)\n(\-{3,}|={3,})$)|(?:^(#{1,6})(?:[ \t]+(.*))?$)|(?:`([^`].*?)`)|(  \n|\n\n)|(__|\*\*|[_*]|~~)/gm,
+    /** The current input position */
+    cursor: 0,
+    /** The stack of unclosed nodes */
+    blocks: [],
+    /** The last parsed node */
+    last: null,
+  }),
+  methods: {
+    /** Parse the next node */
+    next() {
+      return
+    },
+    addText(text) {
+      if (this.prev)
+    }
+  }
+}
+
 /** Convert markdown into a syntax tree */
 const parse = (input, top = []) => {
   // Stack of unclosed nodes
@@ -303,8 +326,9 @@ const parse = (input, top = []) => {
     }
 
     // Inline formatting (-0 to +0)
-    else if (match[++i]) {
-      let style = match[i]
+    else {
+      let style = match[++i]
+      if (!style) throw Error('Unknown token')
       let type = style.length < 2 ? 'italic' : style == '~~' ? 'strike' : 'bold'
 
       // Close a matching block..
