@@ -1,25 +1,25 @@
 declare const parse: (input: string) => Node[]
 export default parse
 
-export type Node = NodeTypes[keyof NodeTypes]
-export type NodeTypes = {
-  bold: Bold
-  border: Border
-  break: Break
-  codeBlock: CodeBlock
-  codeSpan: CodeSpan
-  image: Image
-  italic: Italic
-  link: Link
-  linkDef: LinkDefinition
-  list: List
-  quote: Quote
-  strike: Strike
-  text: Text
-  title: Title
-}
+export type Node =
+  | Bold
+  | Border
+  | Break
+  | CodeBlock
+  | CodeSpan
+  | Image
+  | Italic
+  | Link
+  | LinkDefinition
+  | List
+  | Quote
+  | Strike
+  | Text
+  | Title
 
-interface Block {
+export type NodeTypes = { [P in Node['type']]: Extract<Node, { type: P }> }
+
+export interface Block {
   block: Node[]
 }
 
