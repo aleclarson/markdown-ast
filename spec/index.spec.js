@@ -258,8 +258,16 @@ describe('Code blocks', () => {
     test('with tabs', () => {
       expect(md('\tvar a = 1\n\tvar b = 2')).toMatchSnapshot()
     })
+
     test('with spaces', () => {
       expect(md('    var a = 1\n    var b = 2')).toMatchSnapshot()
+    })
+
+    test('with mixed tabs/spaces', () => {
+      expect(md('\tfoo\n    foo')).toMatchSnapshot()
+
+      // With trailing newline:
+      expect(md('    foo\n\tfoo\n    foo\n')).toMatchSnapshot()
     })
 
     test('must be first on its line', () => {

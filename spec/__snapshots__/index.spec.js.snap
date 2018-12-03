@@ -438,6 +438,36 @@ Array [
 ]
 `;
 
+exports[`Code blocks indented with mixed tabs/spaces 1`] = `
+Array [
+  Object {
+    "code": "foo
+foo",
+    "indent": "	",
+    "syntax": "",
+    "type": "codeBlock",
+  },
+]
+`;
+
+exports[`Code blocks indented with mixed tabs/spaces 2`] = `
+Array [
+  Object {
+    "code": "foo
+foo
+foo",
+    "indent": "    ",
+    "syntax": "",
+    "type": "codeBlock",
+  },
+  Object {
+    "text": "
+",
+    "type": "text",
+  },
+]
+`;
+
 exports[`Code blocks indented with spaces 1`] = `
 Array [
   Object {
