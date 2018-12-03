@@ -64,7 +64,7 @@ const parse = (input, top = []) => {
   let moveTo = offset => (lexer.lastIndex = cursor = offset)
 
   // The primary token scanner
-  let lexer = /(^([*_-])\s*\2(?:\s*\2)+$)|(?:^(\s*)([>*+-]|\d+[.\)])\s+)|(?:^``` *(\w*)\n([\s\S]*?)\n```$)|(^(?:(?:\t|    )[^\n]*(?:\n|$))+)|(\!?\[)|(\](?:(\(|\[)|\:\s*(.+)$)?)|(?:^([^\s].*)\n(\-{3,}|={3,})$)|(?:^(#{1,6})(?:[ \t]+(.*))?$)|(?:`([^`].*?)`)|(  \n|\n\n)|(__|\*\*|[_*]|~~)/gm
+  let lexer = /(^([*_-])\s*\2(?:\s*\2)+$)|(?:^(\s*)([>*+-]|\d+[.\)])\s+)|(?:^``` *(\w*)\n([\s\S]*?)```$)|(^(?:(?:\t|    )[^\n]*(?:\n|$))+)|(\!?\[)|(\](?:(\(|\[)|\:\s*(.+)$)?)|(?:^([^\s].*)\n(\-{3,}|={3,})$)|(?:^(#{1,6})(?:[ \t]+(.*))?$)|(?:`([^`].*?)`)|(  \n|\n\n)|(__|\*\*|[_*]|~~)/gm
   let cursor = 0
   while (true) {
     let match = lexer.exec(input),
@@ -161,7 +161,7 @@ const parse = (input, top = []) => {
     }
 
     // Code blocks: (-1 to +1)
-    else if (match[(i += 2)] || match[i + 1]) {
+    else if (match[(i += 2)] != null || match[i + 1]) {
       flush()
 
       let code = match[i + 1],
