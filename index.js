@@ -47,6 +47,7 @@ const parse = (input, top = []) => {
     // Ensure links are closed properly.
     if (node.type == 'link')
       node = { type: 'link', block: node.block, url: '', ref: '' }
+
     return addNode(node)
   }
 
