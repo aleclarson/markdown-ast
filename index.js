@@ -179,7 +179,8 @@ const parse = (input, top = []) => {
       }
       // Fenced code
       else {
-        code = match[i]
+        // Omit the final newline.
+        code = match[i].slice(0, -1)
         syntax = match[i - 1].toLowerCase()
       }
 
