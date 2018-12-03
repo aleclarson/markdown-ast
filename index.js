@@ -63,7 +63,7 @@ const parse = (input, top = []) => {
   let moveTo = offset => (lexer.lastIndex = cursor = offset)
 
   // The primary token scanner
-  let lexer = /(^([*_-])\s*\2(?:\s*\2)+$)|(?:^(\s*)([>*+-]|\d+[.\)])\s+)|(?:^``` *(\w*)\n([\s\S]*?)\n```$)|(^(?:\t|    ))|(\!?\[)|(\](?:(\(|\[)|\:\s*(.+)$)?)|(?:^([^\s].*)\n(\-{3,}|={3,})$)|(?:^(#{1,6})(?:[ \t]+(.*))?$)|(?:`([^`].*?)`)|(  \n|\n\n)|(__|\*\*|[_*]|~~)/gm
+  let lexer = /(^([*_-])\s*\2(?:\s*\2)+$)|(?:^(\s*)([>*+-]|\d+[.\)])\s+)|(?:^``` *(\w*)\n([\s\S]*?)\n```$)|(^(?:(?:\t|    )[^\n]*(?:\n|$))+)|(\!?\[)|(\](?:(\(|\[)|\:\s*(.+)$)?)|(?:^([^\s].*)\n(\-{3,}|={3,})$)|(?:^(#{1,6})(?:[ \t]+(.*))?$)|(?:`([^`].*?)`)|(  \n|\n\n)|(__|\*\*|[_*]|~~)/gm
   let cursor = 0
   while (true) {
     let match = lexer.exec(input),
@@ -169,25 +169,32 @@ const parse = (input, top = []) => {
     else if (match[(i += 2)] || match[i + 1]) {
       flush()
 
-      let code = match[i]
-      if (!code) {
-        // Find where the current line ends.
-        let start = cursor
-        cursor = search(input, '\n', start)
-        moveTo(cursor < 0 ? input.length : cursor)
+      let code = match[i + 1],
+        syntax = '',
+        indent = ''
 
-        // Merge indented code together.
-        code = input.slice(start, cursor)
-        if (prevNode && prevNode.type == 'codeBlock' && prevNode.indent) {
-          prevNode.code += '\n' + code
-          continue
+      // Indented code
+      if (code) {
+        indent = /^(\t|    )/.exec(code)[0]
+        code = code.replace(/^(\t|    )/gm, '')
+
+        // Avoid capturing the final newline.
+        if (code.slice(-1) == '\n') {
+          code = code.slice(0, -1)
+          moveTo(cursor - 1)
         }
       }
+      // Fenced code
+      else {
+        code = match[i]
+        syntax = match[i - 1].toLowerCase()
+      }
+
       addNode({
         type: 'codeBlock',
         code,
-        syntax: match[i] ? match[i - 1].toLowerCase() : '',
-        indent: match[i + 1] || '',
+        syntax,
+        indent,
       })
     }
 
