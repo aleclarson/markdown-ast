@@ -156,7 +156,8 @@ Array [
 exports[`Borders alternate symbols 1`] = `
 Array [
   Object {
-    "text": "foo",
+    "text": "foo
+",
     "type": "text",
   },
   Object {
@@ -179,7 +180,8 @@ Array [
 exports[`Borders alternate symbols 2`] = `
 Array [
   Object {
-    "text": "foo",
+    "text": "foo
+",
     "type": "text",
   },
   Object {
@@ -202,7 +204,8 @@ Array [
 exports[`Borders alternate symbols 3`] = `
 Array [
   Object {
-    "text": "foo",
+    "text": "foo
+",
     "type": "text",
   },
   Object {
@@ -210,7 +213,8 @@ Array [
     "type": "border",
   },
   Object {
-    "text": "bar",
+    "text": "
+bar",
     "type": "text",
   },
 ]
@@ -219,7 +223,8 @@ Array [
 exports[`Borders alternate symbols 4`] = `
 Array [
   Object {
-    "text": "foo",
+    "text": "foo
+",
     "type": "text",
   },
   Object {
@@ -227,7 +232,8 @@ Array [
     "type": "border",
   },
   Object {
-    "text": "bar",
+    "text": "
+bar",
     "type": "text",
   },
 ]
@@ -242,7 +248,8 @@ Array [
         "type": "border",
       },
       Object {
-        "text": "bar",
+        "text": "
+bar",
         "type": "text",
       },
     ],
@@ -260,7 +267,8 @@ Array [
         "type": "border",
       },
       Object {
-        "text": "bar",
+        "text": "
+bar",
         "type": "text",
       },
     ],
@@ -272,7 +280,8 @@ Array [
 exports[`Borders using spaced-out dashes 1`] = `
 Array [
   Object {
-    "text": "foo",
+    "text": "foo
+",
     "type": "text",
   },
   Object {
@@ -280,7 +289,8 @@ Array [
     "type": "border",
   },
   Object {
-    "text": "bar",
+    "text": "
+bar",
     "type": "text",
   },
 ]
@@ -289,7 +299,8 @@ Array [
 exports[`Borders using spaced-out dashes 2`] = `
 Array [
   Object {
-    "text": "foo",
+    "text": "foo
+",
     "type": "text",
   },
   Object {
@@ -297,7 +308,8 @@ Array [
     "type": "border",
   },
   Object {
-    "text": "bar",
+    "text": "
+bar",
     "type": "text",
   },
 ]
@@ -306,7 +318,8 @@ Array [
 exports[`Borders using spaced-out dashes 3`] = `
 Array [
   Object {
-    "text": "foo",
+    "text": "foo
+",
     "type": "text",
   },
   Object {
@@ -314,7 +327,8 @@ Array [
     "type": "border",
   },
   Object {
-    "text": "bar",
+    "text": "
+bar",
     "type": "text",
   },
 ]
@@ -337,7 +351,8 @@ Array [
     "type": "border",
   },
   Object {
-    "text": "bar",
+    "text": "
+bar",
     "type": "text",
   },
 ]
@@ -360,7 +375,8 @@ Array [
     "type": "border",
   },
   Object {
-    "text": "bar",
+    "text": "
+bar",
     "type": "text",
   },
 ]
@@ -423,7 +439,8 @@ Array [
     "type": "codeBlock",
   },
   Object {
-    "text": "foo",
+    "text": "
+foo",
     "type": "text",
   },
 ]

@@ -71,15 +71,6 @@ const parse = (input, top = []) => {
 
     // Copy text between this match and the last.
     let text = input.slice(cursor, matchOffset)
-
-    // Trim singular line breaks, except the EOF newline.
-    if (match || !/^\r?\n$/.test(text))
-      text = text.replace(match ? /(^\r?\n|\r?\n$)/g : /^\r?\n/g, '')
-
-    // Move the cursor _after_ this match.
-    if (match) cursor = lexer.lastIndex
-
-    // Create a text node.
     if (text) {
       addText(text)
 
@@ -93,6 +84,9 @@ const parse = (input, top = []) => {
 
     if (!match) break
     let i = 1
+
+    // Move the cursor _after_ this match.
+    cursor = lexer.lastIndex
 
     // Borders (-0 to +1)
     if (match[i]) {
