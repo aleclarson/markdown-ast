@@ -36,11 +36,9 @@ const parse = (input, top = []) => {
 
   // Add a node to the current block.
   let addNode = node => {
-    let block = blocks.length ? blocks[blocks.length - 1].block : top
-    if (block) {
-      block.push(node)
-      return (prevNode = node)
-    }
+    let len = blocks.length
+    ;(len ? blocks[len - 1].block : top).push(node)
+    return (prevNode = node)
   }
 
   let addBlock = node => {
