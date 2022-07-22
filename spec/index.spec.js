@@ -48,6 +48,10 @@ describe('Italic', () => {
   test('must be closed with same style', () => {
     expect(md('_Hello world*')).toMatchSnapshot()
   })
+
+  test('cannot have word character before it', () => {
+    expect(md('a_b_c')).toMatchSnapshot()
+  })
 })
 
 describe('Strike-through', () => {

@@ -914,13 +914,8 @@ Array [
   Object {
     "block": Array [
       Object {
-        "text": "foo",
+        "text": "foo_",
         "type": "text",
-      },
-      Object {
-        "block": Array [],
-        "style": "_",
-        "type": "italic",
       },
     ],
     "style": "__",
@@ -1077,18 +1072,22 @@ Array [
 ]
 `;
 
+exports[`Italic cannot have word character before it 1`] = `
+Array [
+  Object {
+    "text": "a_b_c",
+    "type": "text",
+  },
+]
+`;
+
 exports[`Italic must be closed with same style 1`] = `
 Array [
   Object {
     "block": Array [
       Object {
-        "text": "Hello world",
+        "text": "Hello world*",
         "type": "text",
-      },
-      Object {
-        "block": Array [],
-        "style": "*",
-        "type": "italic",
       },
     ],
     "style": "_",

@@ -26,6 +26,8 @@ const parse = (input, top = []) => {
   let blocks = []
   // The last added node
   let prevNode
+  // The last character index to be escaped
+  let lastEscapeIdx = -1
 
   // Add text to the previous node if possible.
   // Otherwise, create a new text node and pass it to `addNode`.
@@ -75,6 +77,7 @@ const parse = (input, top = []) => {
 
       // Skip escaped matches.
       if (match && isEscaped(text)) {
+        lastEscapeIdx = match.index
         moveTo(match.index + 1)
         addText(match[0][0])
         continue
@@ -314,6 +317,15 @@ const parse = (input, top = []) => {
       }
       // ..or open a new block.
       else {
+        // Assume not italic if a word character comes before,
+        // unless that character was an escaped match.
+        if (type == 'italic' && lastEscapeIdx < matchOffset - 1) {
+          let prevChar = input[matchOffset - 1]
+          if (prevChar && /\w/.test(prevChar)) {
+            addText(style)
+            continue
+          }
+        }
         prevNode = null
         blocks.push({
           type,
